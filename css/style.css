@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.input-block {
+    display: flex;
+    gap: 50px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 30px;
+}
+
+.btn:active {
+    scale: 1.2;
+}
+
+table {
+    width: 60%;
+    margin-top: 80px;
+}
+
+label {
+    display: block;
+}
+
+form {
+    display: flex;
+    gap: 50px;
+}
+
+tr {
+    text-align: center;
+    margin-bottom: 20px;
+}
