@@ -12,7 +12,7 @@ form.onsubmit = (event) => {
     event.preventDefault();
 
     let student = {
-        name: name_inp.value,
+        Id: Math.random(),
         age: new Date().getFullYear() - age.value,
     };
 
@@ -38,12 +38,17 @@ function reload(arr) {
         let actionstd = document.createElement('td')
 
         numtd.innerHTML = arr.indexOf(item) + 1
-        namtd.innerHTML = item.name
+        namtd.innerHTML = item.task
         agetd.innerHTML = item.age
         actionstd.innerHTML = 'edit'
 
         tr.append(numtd, namtd, agetd, actionstd)
         tbody.append(tr)
+
+        tr.onclick = () => {
+            tr.style.display = 'none'
+
+        }
     }
 }
 
